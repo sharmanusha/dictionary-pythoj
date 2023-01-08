@@ -1,0 +1,37 @@
+#Dictionary: unordered collection of key value pairs enclosed with {}
+# dictionary is mutable
+fruit={"apple":50,"banana":60,"orange":30,"grapes":40}
+
+#extracting keys 
+print(fruit.keys())
+print(fruit.values())
+print(fruit.items())
+
+#adding the elements
+fruit["mango"]=70
+print(fruit)
+
+#changing the existing element
+fruit["banana"]=40
+print(fruit)
+
+#dictionary functions
+#updating one's dictionary elements with another
+fruit1={"apple":40,"banana":60}
+fruit2={"grapes":70,"guava":50}
+fruit1.update(fruit2)
+print(fruit1)
+ 
+#popping an element
+fruit.pop("orange")
+print(fruit)
+----------------------------------------------------------------------------------------------------
+output:
+dict_keys(['apple', 'banana', 'orange', 'grapes'])
+dict_values([50, 60, 30, 40])
+dict_items([('apple', 50), ('banana', 60), ('orange', 30), ('grapes', 40)])
+{'apple': 50, 'banana': 60, 'orange': 30, 'grapes': 40, 'mango': 70}
+{'apple': 50, 'banana': 40, 'orange': 30, 'grapes': 40, 'mango': 70}
+{'apple': 40, 'banana': 60, 'grapes': 70, 'guava': 50}
+{'apple': 50, 'banana': 40, 'grapes': 40, 'mango': 70}
+> 
